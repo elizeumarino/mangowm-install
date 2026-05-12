@@ -69,7 +69,9 @@ Adicione estas linhas ao seu arquivo
 ~/.zprofile ou 
 /etc/environment:`
 
-> ### Configuração de teclado para Mangowm
-> export XKB_DEFAULT_LAYOUT=br
-> export XKB_DEFAULT_VARIANT=abnt2
-> export XKB_DEFAULT_MODEL=abnt2
+´´´
+### Configuração de teclado para Mangowm
+export XKB_DEFAULT_LAYOUT=br
+export XKB_DEFAULT_VARIANT=abnt2
+export XKB_DEFAULT_MODEL=abnt2
+´´´

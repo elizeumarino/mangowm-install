@@ -65,6 +65,9 @@ Adicione estas linhas ao seu arquivo
 ~/.bash_profile,
 ~/.zprofile ou 
 /etc/environment:
+`~/.bash_profile,
+~/.zprofile ou 
+/etc/environment:`
 
 > ### Configuração de teclado para Mangowm
 > export XKB_DEFAULT_LAYOUT=br

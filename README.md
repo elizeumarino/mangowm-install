@@ -16,7 +16,7 @@ sudo pacman -S noto-fonts ttf-dejavu ttf-liberation noto-fonts-emoji noto-fonts-
 
 - sudo pacman -S --needed base-devel
 - git clone https://aur.archlinux.org/paru.git
-- cd parucd
+- cd paru
 - makepkg -si
 
 

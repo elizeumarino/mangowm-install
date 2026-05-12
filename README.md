@@ -1,4 +1,4 @@
-#   Guia de Instalação para o Mangowm no Biglinux/Archlinux/manjaro Ou quaquer base archlinux
+## Guia de Instalação para o Mangowm no Biglinux/Archlinux/manjaro Ou quaquer base archlinux
 
 -   AUTHOR_____:   Elizeu Marino
 -   DATA_______:   2026

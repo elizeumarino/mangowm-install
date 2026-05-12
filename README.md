@@ -1,13 +1,11 @@
-----------------------------------------------------------------------
-#   Guia de Instalação para o Mangowm no Biglinux/Archlinux/manjaro
-   Ou quaquer base archlinux
+#   Guia de Instalação para o Mangowm no Biglinux/Archlinux/manjaro Ou quaquer base archlinux
 
-   AUTHOR_____:   Elizeu Marino
-   DATA_______:   2026
-   VERSÃO 1.0.0
-----------------------------------------------------------------------
+-   AUTHOR_____:   Elizeu Marino
+-   DATA_______:   2026
+-   VERSÃO 1.0.0
 
- dica para pesquisar https://github.com/victorsosaMx/vsWaybar-Studio
+
+** dica para pesquisar https://github.com/victorsosaMx/vsWaybar-Studio **
 
 ### opcionais dependencias que podem ser necessarias na config com waybar 
 ** sudo paru -S kvantum kvantum-qt5 kvantum-qt6-git kvantummanager qt5ct qt6ct nwg-look arc-gtk-theme breeze-icons adw-gtk-theme **

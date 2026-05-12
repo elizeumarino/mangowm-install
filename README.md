@@ -10,14 +10,14 @@
 ### opcionais dependencias que podem ser necessarias na config com waybar 
 ** sudo paru -S kvantum kvantum-qt5 kvantum-qt6-git kvantummanager qt5ct qt6ct nwg-look arc-gtk-theme breeze-icons adw-gtk-theme **
 
-# https://github.com/mangowm/mango
+## https://github.com/mangowm/mango
 
 sudo pacman -S noto-fonts ttf-dejavu ttf-liberation noto-fonts-emoji noto-fonts-extra noto-fonts-cjk ttf-liberation otf-font-awesome ttf-jetbrains-mono ttf-jetbrains-mono-nerd
 
-sudo pacman -S --needed base-devel
-git clone https://aur.archlinux.org/paru.git
-cd parucd
-makepkg -si
+- sudo pacman -S --needed base-devel
+- git clone https://aur.archlinux.org/paru.git
+- cd parucd
+- makepkg -si
 
 
 ### Dependencies principais do mango

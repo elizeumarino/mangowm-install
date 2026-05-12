@@ -47,11 +47,11 @@ No arquivo de configuração (config.conf)
 O MangoWC é um compositor Wayland baseado no dwl (que por sua vez é inspirado no dwm). Ao contrário de compositores como o Sway ou Hyprland, 
 As versões mais recentes do MangoWC permitem configurar variáveis de ambiente e parâmetros de entrada diretamente no arquivo de configuração (geralmente em ~/.config/mango/config.conf). Tente adicionar as seguintes linhas:
 
-### Configurações de Teclado no mango.conf
+´### Configurações de Teclado no mango.conf
 xkb_rules_layout=br
 xkb_rules_variant=abnt2
 xkb_rules_model=pc105
-xkb_rules_options=grp:alt_altgr_toggle,caps:hyper
+xkb_rules_options=grp:alt_altgr_toggle,caps:hyper´
 
 ### Opcional: Ajuste de repetição de teclas
 repeat_rate=25
@@ -66,7 +66,7 @@ Adicione estas linhas ao seu arquivo
 ~/.zprofile ou 
 /etc/environment:
 
-### Configuração de teclado para Mangowm
+´### Configuração de teclado para Mangowm
 export XKB_DEFAULT_LAYOUT=br
 export XKB_DEFAULT_VARIANT=abnt2
-export XKB_DEFAULT_MODEL=abnt2
+export XKB_DEFAULT_MODEL=abnt2´

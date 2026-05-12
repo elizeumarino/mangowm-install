@@ -11,9 +11,9 @@
 ** sudo paru -S kvantum kvantum-qt5 kvantum-qt6-git kvantummanager qt5ct qt6ct nwg-look arc-gtk-theme breeze-icons adw-gtk-theme **
 
 ## https://github.com/mangowm/mango
-
+```
 sudo pacman -S noto-fonts ttf-dejavu ttf-liberation noto-fonts-emoji noto-fonts-extra noto-fonts-cjk ttf-liberation otf-font-awesome ttf-jetbrains-mono ttf-jetbrains-mono-nerd
-
+```
 ```
 sudo pacman -S --needed base-devel
 git clone https://aur.archlinux.org/paru.git
@@ -22,17 +22,21 @@ makepkg -si
 ```
 
 ### Dependencies principais do mango
+```
 paru -S rofi foot xdg-desktop-portal-wlr swaybg waybar wl-clip-persist cliphist wl-clipboard wlsunset xfce-polkit swaync pamixer wlr-dpms sway-audio-idle-inhibit-git swayidle dimland-git brightnessctl swayosd wlr-randr grim slurp satty swaylock-effects-git wlogout sox mango-git
-
+```
 ### Dependencies DMS
+```
 paru -S foot xdg-desktop-portal-wlr swaybg wl-clip-persist cliphist wl-clipboard sway-audio-idle-inhibit-git brightnessctl grim slurp satty matugen-bin dms-shell-git quickshell-git
-
+```
 ### Config DMS
+```
 git clone -b dms https://github.com/DreamMaoMao/mango-config.git ~/.config/mango
-
+```
 ### Config Waybar
+```
 git clone https://github.com/DreamMaoMao/mango-config.git ~/.config/mango
-
+```
 
 ### 1. Configuração de teclado para ABNT2
 Usando o localectl

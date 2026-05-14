@@ -151,7 +151,7 @@ cat << 'EOF' >> ~/.config/mango/config.conf
 xkb_rules_layout=br
 xkb_rules_variant=abnt2
 xkb_rules_model=pc105
-xkb_rules_options=grp:alt_altgr_toggle,caps:hyper
+# xkb_rules_options=grp:alt_altgr_toggle,caps:hyper
 
 ### Opcional: Ajuste de repetição de teclas
 # repeat_rate=25

@@ -57,7 +57,9 @@ menu() {
 
 function inst_obrigas(){
     clear
+    echo -e " "
     echo -e "${AZUL}Instalando Dependencias Obrigatorias...${RESET}"
+    echo -e " "
     mkdir -p ~/temp
     cd ~/temp || exit
     sudo pacman -S --needed base-devel git

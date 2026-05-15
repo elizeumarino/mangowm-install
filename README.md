@@ -82,3 +82,9 @@ export XKB_DEFAULT_LAYOUT=br
 export XKB_DEFAULT_VARIANT=abnt2
 export XKB_DEFAULT_MODEL=abnt2
 ```
+```
+# se você tem outro ambiente diferente do xfce execute os comando abaixo
+sudo mv /etc/xdg/autostart/xfce-polkit.desktop ~/.config/mango
+sudo chown "$USER:$USER" ~/.config/mango/xfce-polkit.desktop
+chmod +x ~/.config/mango/xfce-polkit.desktop
+```

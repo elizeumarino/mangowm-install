@@ -1,4 +1,4 @@
-#!/bin/bash
+6#!/bin/bash
 
 #----------------------------------------------------------------------
 #   Script de Instalação Moderno em Bash Puro (Sem dependências)
@@ -57,21 +57,19 @@ menu() {
 
 function inst_obrigas(){
     clear
-    echo -e " "
     echo -e "${AZUL}Instalando Dependencias Obrigatorias...${RESET}"
-    echo -e " "
     mkdir -p ~/temp
     cd ~/temp || exit
     sudo pacman -S --needed base-devel git
     git clone https://aur.archlinux.org/paru.git
     cd paru || exit
-    makepkg -si --noconfirm
-    sudo pacman -Syu --noconfirm noto-fonts ttf-dejavu ttf-liberation noto-fonts-emoji noto-fonts-extra noto-fonts-cjk otf-font-awesome ttf-jetbrains-mono ttf-jetbrains-mono-nerd
-    paru -S --noconfirm rofi foot xdg-desktop-portal-wlr swaybg waybar wl-clip-persist cliphist wl-clipboard wlsunset xfce-polkit swaync pamixer wlr-dpms sway-audio-idle-inhibit-git swayidle dimland-git brightnessctl swayosd wlr-randr grim slurp satty swaylock-effects-git wlogout sox mango-git
+    makepkg -si 
+    sudo pacman -Syu noto-fonts ttf-dejavu ttf-liberation noto-fonts-emoji noto-fonts-extra noto-fonts-cjk otf-font-awesome ttf-jetbrains-mono ttf-jetbrains-mono-nerd
+    paru -S rofi foot xdg-desktop-portal-wlr swaybg waybar wl-clip-persist cliphist wl-clipboard wlsunset xfce-polkit swaync pamixer wlr-dpms sway-audio-idle-inhibit-git swayidle dimland-git brightnessctl swayosd wlr-randr grim slurp satty swaylock-effects-git wlogout sox mangowm-git
     echo " "
     echo " "    
     echo -e "${VERDE}Instalação concluída!${RESET}"
-    sleep 5
+    sleep 8
     clear
     menu
 }
@@ -82,7 +80,7 @@ function inst_dms(){
     echo -e "${AZUL}Instalando Mangowm com DMS...${RESET}"
     echo -e " "
 
-    paru -S --noconfirm foot xdg-desktop-portal-wlr swaybg wl-clip-persist cliphist wl-clipboard sway-audio-idle-inhibit-git brightnessctl grim slurp satty matugen-bin dms-shell-git quickshell-git
+    paru -S foot xdg-desktop-portal-wlr swaybg wl-clip-persist cliphist wl-clipboard sway-audio-idle-inhibit-git brightnessctl grim slurp satty matugen-bin dms-shell-git quickshell-git
 
     # Garante a pasta pai antes de qualquer operação (Boa prática)
     mkdir -p ~/.config/mango
@@ -91,11 +89,11 @@ function inst_dms(){
     sudo mv /etc/xdg/autostart/xfce-polkit.desktop ~/.config/mango
     sudo chown "$USER:$USER" ~/.config/mango/xfce-polkit.desktop
     chmod +x ~/.config/mango/xfce-polkit.desktop
-    echo '~/.config/mango/xfce-polkit.desktop &' >> ~/.config/autostart.sh
+    echo '~/.config/mango/xfce-polkit.desktop &' >> ~/.config/mango/autostart.sh
     echo " "
     echo " "
     echo -e "${VERDE}Instalação concluída!${RESET}"
-    sleep 5
+    sleep 8
     clear
     menu
 }
@@ -113,11 +111,11 @@ function inst_waybar(){
     sudo chown "$USER:$USER" ~/.config/mango/xfce-polkit.desktop
     chmod +x ~/.config/mango/xfce-polkit.desktop
 
-    echo '~/.config/mango/xfce-polkit.desktop &' >> ~/.config/autostart.sh
+    echo '~/.config/mango/xfce-polkit.desktop &' >> ~/.config/mango/autostart.sh
     echo " "
     echo " "
     echo -e "${VERDE}Instalação concluída!${RESET}"
-    sleep 5
+    sleep 8
     clear
     menu
 }
@@ -127,11 +125,11 @@ function inst_opcions(){
     echo -e " "
     echo -e "${AZUL}Instalando Opcionais da Waybar...${RESET}"
     echo -e " "
-    paru -S --noconfirm kvantum kvantum-qt5 kvantum-qt6-git kvantummanager qt5ct qt6ct nwg-look arc-gtk-theme breeze-icons adw-gtk-theme
+    paru -S kvantum kvantum-qt5 kvantum-qt6-git kvantummanager qt5ct qt6ct nwg-look arc-gtk-theme breeze-icons adw-gtk-theme
     echo " "
     echo " "
     echo -e "${VERDE}Instalação concluída!${RESET}"
-    sleep 5
+    sleep 8
     clear
     menu
 }
@@ -169,8 +167,8 @@ EOF
 
     echo " "
     echo " "
-    echo -e "${VERDE}Instalação concluída!${RESET}"
-    sleep 5
+    echo -e "${VERDE}Ajustes e configuração de teclado concluída!${RESET}"
+    sleep 8
     clear
     menu
 }
@@ -183,11 +181,10 @@ function sair(){
     echo -e "${VERDE}      Fica mais um pouco, Vai ter Bolo! \\o/${RESET}"
     echo -e " "
     echo -e "${CIANO}======================================================${RESET}"
-    sleep 10
+    sleep 14
     clear
     exit 0
 }
 
 # Inicia o script chamando a função principal
 menu
-
